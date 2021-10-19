@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    Hello world
-    <script src="script.js"></script>
-  </body>
+<body>
+<p> Select LED </p>
+<form action="/cgi-bin/lab4py.py" method="POST">
+  <input type="radio" name="option" value="a" checked> Red LED <br>
+  <input type="radio" name="option" value="b"> Blue LED <br>
+  <input type="radio" name="option" value="c"> Green LED <br>
+  <p> Brightness Value: </p>
+  <input type="range" name="slider" min ="0" max="100" value ="0"><br>
+  <input type="submit" value="Change Brightness">
+</form>
+</body>
 </html>
